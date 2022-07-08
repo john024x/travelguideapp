@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travelguideapp/description_place.dart';
+import 'package:travelguideapp/gradient_back.dart';
+import 'package:travelguideapp/review_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,20 +29,25 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.deepPurple,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: Text('Travel guide'),
+            body: Stack(children: <Widget>[
+          ListView(
+            children: <Widget>[
+              DescriptionPlace(
+                  "Hogwarts",
+                  "Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was the British wizarding school, located in the Scottish Highlands. It accepted magical students from Great Britain and Ireland for enrolment. It was a state-owned school, funded by the Ministry of Magic.",
+                  4,
+                  1,
+                  0),
+              ReviewList(),
+            ],
           ),
-          body: new DescriptionPlace(
-              "Hogwarts",
-              "Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was the British wizarding school, located in the Scottish Highlands. It accepted magical students from Great Britain and Ireland for enrolment. It was a state-owned school, funded by the Ministry of Magic.",
-              4,
-              1,
-              0),
+          GradientBack(),
+        ])
 
-          //bottomNavigationBar: ,
-          // floatingActionButton: ,
-          // floatingActionButtonAnimator: ,
-        )
+            //bottomNavigationBar: ,
+            // floatingActionButton: ,
+            // floatingActionButtonAnimator: ,
+            )
         // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

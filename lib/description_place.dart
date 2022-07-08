@@ -14,19 +14,6 @@ class DescriptionPlace extends StatelessWidget {
       this.half_stars, this.empty_stars);
   @override
   Widget build(BuildContext context) {
-    final description = Container(
-        margin: EdgeInsets.only(
-          top: 20.0,
-          left: 20.0,
-          right: 20.0,
-        ),
-        child: Text(
-          nameDescription,
-          style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.normal,
-          ),
-        ));
     final star = Container(
       margin: EdgeInsets.only(
         top: 323.0,
@@ -57,6 +44,20 @@ class DescriptionPlace extends StatelessWidget {
         color: Color(0xFFf2C611),
       ),
     );
+    final description = Container(
+        margin: EdgeInsets.only(
+          top: 20.0,
+          left: 20.0,
+          right: 20.0,
+        ),
+        child: Text(
+          nameDescription,
+          style: TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.normal,
+          ),
+        ));
+
     final titleStar = Row(
       children: <Widget>[
         Container(
@@ -83,6 +84,9 @@ class DescriptionPlace extends StatelessWidget {
         ),
       ],
     );
-    return Column(children: <Widget>[titleStar, description]);
+    return Column(children: <Widget>[
+      titleStar,
+      description,
+    ]);
   }
 }
