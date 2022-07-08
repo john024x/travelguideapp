@@ -89,6 +89,15 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/images/profile.jpeg
+    - assets/images/harry.jpeg
+    - assets/images/ron.jpeg
+    - assets/images/ginny.jpeg
+    - assets/images/hogwarts.jpeg
+    - assets/images/redkeep.jpeg
+    - assets/images/tattoine.jpeg
+    - assets/images/theshire.jpeg
+    - assets/images/vormir.png
+    - assets/images/gothamcity.jpeg
   fonts: 
     - family: Montserrat
       fonts:

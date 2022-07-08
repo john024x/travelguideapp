@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelguideapp/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   // String namePlace = "Hogwarts";
@@ -84,9 +85,8 @@ class DescriptionPlace extends StatelessWidget {
         ),
       ],
     );
-    return Column(children: <Widget>[
-      titleStar,
-      description,
-    ]);
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[titleStar, description, ButtonPurple('Navigate')]);
   }
 }

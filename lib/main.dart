@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travelguideapp/description_place.dart';
-import 'package:travelguideapp/gradient_back.dart';
 import 'package:travelguideapp/review_list.dart';
+import 'package:travelguideapp/header_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               ReviewList(),
             ],
           ),
-          GradientBack(),
+          HeaderAppBar(),
         ])
 
             //bottomNavigationBar: ,

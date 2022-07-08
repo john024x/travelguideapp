@@ -39,12 +39,18 @@ class ReviewList extends StatelessWidget {
       children: <Widget>[
         Review('assets/images/profile.jpeg', 'Hermione Granger',
             '1 review 5 photos', 'The astronomy tower is awesome!', 5, 0, 0),
-        Review('assets/images/profile.jpeg', 'Harry Potter',
-            '1 review 5 photos', 'The astronomy tower is awesome!', 5, 0, 0),
-        Review('assets/images/profile.jpeg', 'Ron Weasley', '1 review 5 photos',
-            'The astronomy tower is awesome!', 5, 0, 0),
-        Review('assets/images/profile.jpeg', 'Ginny W.', '1 review 5 photos',
-            'The astronomy tower is awesome!', 5, 0, 0)
+        Review(
+            'assets/images/harry.jpeg',
+            'Harry Potter',
+            '1 review 5 photos',
+            'The quidditch match was epic! Waiting for the Gryffindor vs Slytherin Match!',
+            5,
+            0,
+            0),
+        Review('assets/images/ron.jpeg', 'Ron Weasley', '1 review 5 photos',
+            'Boring', 2, 1, 2),
+        Review('assets/images/ginny.jpeg', 'Ginny W.', '1 review 5 photos',
+            'Many monsters', 1, 1, 3)
       ],
     );
     return listofReviews;
