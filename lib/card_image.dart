@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelguideapp/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
   String pathImage = "assets/images/hogwarts.jpeg";
@@ -28,6 +29,9 @@ class CardImage extends StatelessWidget {
         ],
       ),
     );
-    return card;
+    return Stack(
+      alignment: Alignment(0.9, 1.15),
+      children: <Widget>[card, FloatingActionButtonGreen()],
+    );
   }
 }

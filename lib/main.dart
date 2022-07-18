@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:travelguideapp/description_place.dart';
-import 'package:travelguideapp/review_list.dart';
-import 'package:travelguideapp/header_appbar.dart';
+import 'package:travelguideapp/travelguideapp.dart';
+
+import 'home_trips.dart';
+import 'package:travelguideapp/trips_cupertino.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,26 +29,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.deepPurple,
         ),
-        home: Scaffold(
-            body: Stack(children: <Widget>[
-          ListView(
-            children: <Widget>[
-              DescriptionPlace(
-                  "Hogwarts",
-                  "Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was the British wizarding school, located in the Scottish Highlands. It accepted magical students from Great Britain and Ireland for enrolment. It was a state-owned school, funded by the Ministry of Magic.",
-                  4,
-                  1,
-                  0),
-              ReviewList(),
-            ],
-          ),
-          HeaderAppBar(),
-        ])
-
-            //bottomNavigationBar: ,
-            // floatingActionButton: ,
-            // floatingActionButtonAnimator: ,
-            )
+        home: TravelGuide()
         // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
